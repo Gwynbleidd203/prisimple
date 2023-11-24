@@ -73,6 +73,7 @@ details {
 .add-more {
 
     transition: background-color .4s ease;
+    
 
     &:hover {
 
