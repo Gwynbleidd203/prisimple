@@ -16,6 +16,10 @@ form {
     gap: var(--sm);
 }
 
+a > h2 {
+    --spacing: 0;
+}
+
 small {
     font-weight: 500;
     color: var(--muted-text);
