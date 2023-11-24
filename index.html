@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PriSimple</title>
+  <link rel="stylesheet" href="src/assets/css/style.css">
+</head>
+
+<body>
+  <header class="header-sticky">
+    <a href="#" role="img" aria-label="logo">
+      <h2>PriSimple</h2>
+    </a>
+
+    <nav role="navigation">
+      <ul>
+        <li>
+          <a href="#cadastro">cadastro</a>
+        </li>
+
+        <li>
+          <a href="#products">products</a>
+        </li>
+
+        <li>
+          <a href="#sobre">sobre</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h1>PriSimple</h1>
+      <p>Precificador simples, porém com princípios.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, adipisci beatae delectus laborum fugiat sit
+        praesentium a impedit error ipsa maiores natus doloribus quia deserunt ratione voluptas officiis consequuntur
+        perspiciatis?</p>
+    </section>
+
+    
+
+    <section id="products">
+
+      <h2>Lista de Matérias-Prima</h2>
+
+      <div id="product-list" class="flex-cluster" style="--bg: var(--muted-secondary)">
+
+        <div id="product-add" class="product add-more">
+          <h4>Add More</h4>
+          <p style="text-align: center; font-size: var(--lg);">&plus;</p>
+        </div>
+
+      </div>
+
+      <dialog id="product-add-dialog" >
+
+        <h2>Cadastro da Matéria-Prima</h2>
+
+        <span id="close-modal" class="close-modal">&times;</span>
+
+        <form id="register-form" action="">
+
+          <label for="material-name">Nome</label>
+
+          <input type="text" id="material-name" placeholder="Nome da Matéria-Prima..." required>
+
+          <label for="material-quant">Quantidade</label>
+
+          <input type="number" name="" id="material-quant" placeholder="Quantidade da Matéria-Prima..." required>
+
+          <label for="material-value">
+            Valor
+          </label>
+          <input type="number" name="" id="material-value" placeholder="Valor da Matéria Prima...." required>
+  
+          <label for="material-measure">
+            Tipo de Medida
+          </label>
+          <select name="material-measure" id="material-measure">
+            <option value="" selected disabled>Medida da Matéria-Prima</option>
+            <option value="M">Metro(m)</option>
+            <option value="CM">Centímetro(cm)</option>
+            <option value="MM">Milímetro(mm)</option>
+            <option value="UN">Unidade(unid)</option>
+          </select>
+  
+          <br>
+          <button type="submit">Cadastrar</button>
+        </form>
+      </dialog>
+    </section>
+
+
+    <section id="upload">
+
+      <h2>Faça Upload De Uma Planilha Aqui</h2>
+
+      <form action="">
+        <label for="drop">
+
+          Drag or Drop your file here
+
+          <input type="file" name="" id="drop">
+        </label>
+      </form>
+
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre o PriSimple</h2>
+
+      <details>
+        <summary>Como eu uso?</summary>
+        <p>Basta cadastrar seu produto para ele ser adicionado na base de dados da aplicação</p>
+      </details>
+
+      <details>
+        <summary>Preciso saber programação para usar?</summary>
+        <p>Não é necessário, buscamos deixar a aplicação a mais simples e acessível possível</p>
+      </details>
+
+      <details>
+        <summary>Preciso pagar para poder adquirir a aplicação?</summary>
+        <p>De forma alguma, não cobramos pelo uso do PriSimple. Porém, aceitamos doações.
+          
+        <br>
+        
+        Meu Pix: <strong>(35) 9 9816-3510</strong>
+        </p>
+      </details>
+    </section>
+
+
+  </main>
+
+  <footer>
+
+    <p>Made with ❤ by @Vattghern203</p>
+  </footer>
+
+  <script src="src/assets/js/script.js" defer></script>
+
+</body>
+
+</html>

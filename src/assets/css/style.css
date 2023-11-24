@@ -1,0 +1,107 @@
+@import url(https://cdn.jsdelivr.net/npm/yonaka/dist/yonaka.min.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    --spacing: var(--xl);
+}
+
+section {
+    margin-block-end: 80dvh;
+}
+
+form {
+    gap: var(--sm);
+}
+
+small {
+    font-weight: 500;
+    color: var(--muted-text);
+}
+
+label {
+    width: 100%;
+    display: block;
+    
+    & input {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+    }
+}
+
+label:not(:first-child) {
+    margin-block-start: var(--lg);
+}
+
+details {
+
+    & p {
+
+        background-color: var(--muted-primary);
+    }
+}
+
+#products:has(.flex-cluster:empty) {
+
+    display: none;
+}
+
+.product {
+
+    border: var(--border);
+    width: fit-content;
+    cursor: pointer;
+
+    transition: background-color .2s ease-in, border-style .2s ease;
+
+    &:hover {
+        --bg: var(--muted-primary);
+    }
+
+    p {
+        --spacing: 0;
+    }
+}
+
+.add-more {
+
+    transition: background-color .4s ease;
+
+    &:hover {
+
+        --bg: var(--accent);
+    }
+}
+
+.close-modal {
+    font-size: 4rem;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    cursor: pointer;
+    transition: opacity .2s ease-in,
+        color .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:hover {
+        opacity: .8;
+    }
+
+    &:active {
+        color: var(--destructive);
+    }
+}
+
+dialog {
+    --spacing: var(--xxl);
+    align-self: center;
+    width: fit-content;
+    padding: var(--spacing);
+    border: var(--border);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
