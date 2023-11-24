@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriSimple</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header class="header-sticky">
+        <a href="../../index.html" role="img" aria-label="logo">
+            <h2>PriSimple</h2>
+        </a>
+
+        <nav role="navigation">
+            <ul>
+                <li>
+                    <a href="#">cadastro</a>
+                </li>
+
+                <li>
+                    <a href="products.html">products</a>
+                </li>
+
+                <li>
+                    <a href="#">sobre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+
+            <h2>Lista de Matérias-Prima</h2>
+
+            <div id="product-list" class="flex-cluster" style="--bg: var(--muted-secondary)">
+
+                <div id="product-add" class="product add-more">
+                    <h4>Add More</h4>
+                    <p style="text-align: center; font-size: var(--lg);">&plus;</p>
+                </div>
+
+            </div>
+
+            <dialog id="product-add-dialog">
+
+                <h2>Cadastro da Matéria-Prima</h2>
+
+                <span id="close-modal" class="close-modal">&times;</span>
+
+                <form id="register-form" action="">
+
+                    <label for="material-name">Nome</label>
+
+                    <input type="text" id="material-name" placeholder="Nome da Matéria-Prima..." required>
+
+                    <label for="material-quant">Quantidade</label>
+
+                    <input type="number" name="" id="material-quant" placeholder="Quantidade da Matéria-Prima..."
+                        required>
+
+                    <label for="material-value">
+                        Valor
+                    </label>
+                    <input type="number" name="" id="material-value" placeholder="Valor da Matéria Prima...." required>
+
+                    <label for="material-measure">
+                        Tipo de Medida
+                    </label>
+                    <select name="material-measure" id="material-measure">
+                        <option value="" selected disabled>Medida da Matéria-Prima</option>
+                        <option value="M">Metro(m)</option>
+                        <option value="CM">Centímetro(cm)</option>
+                        <option value="MM">Milímetro(mm)</option>
+                        <option value="UN">Unidade(unid)</option>
+                    </select>
+
+                    <br>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </dialog>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤ by @Vattghern203</p>
+    </footer>
+
+    <script src="../assets/js/script.js" defer></script>
+</body>

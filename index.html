@@ -10,7 +10,7 @@
 
 <body>
   <header class="header-sticky">
-    <a href="#" role="img" aria-label="logo">
+    <a href="index.html" role="img" aria-label="logo">
       <h2>PriSimple</h2>
     </a>
 
@@ -21,7 +21,7 @@
         </li>
 
         <li>
-          <a href="#products">products</a>
+          <a href="src/pages/products.html">products</a>
         </li>
 
         <li>
@@ -36,62 +36,9 @@
     <section>
       <h1>PriSimple</h1>
       <p>Precificador simples, porém com princípios.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, adipisci beatae delectus laborum fugiat sit
-        praesentium a impedit error ipsa maiores natus doloribus quia deserunt ratione voluptas officiis consequuntur
-        perspiciatis?</p>
-    </section>
-
-    
-
-    <section id="products">
-
-      <h2>Lista de Matérias-Prima</h2>
-
-      <div id="product-list" class="flex-cluster" style="--bg: var(--muted-secondary)">
-
-        <div id="product-add" class="product add-more">
-          <h4>Add More</h4>
-          <p style="text-align: center; font-size: var(--lg);">&plus;</p>
-        </div>
-
-      </div>
-
-      <dialog id="product-add-dialog" >
-
-        <h2>Cadastro da Matéria-Prima</h2>
-
-        <span id="close-modal" class="close-modal">&times;</span>
-
-        <form id="register-form" action="">
-
-          <label for="material-name">Nome</label>
-
-          <input type="text" id="material-name" placeholder="Nome da Matéria-Prima..." required>
-
-          <label for="material-quant">Quantidade</label>
-
-          <input type="number" name="" id="material-quant" placeholder="Quantidade da Matéria-Prima..." required>
-
-          <label for="material-value">
-            Valor
-          </label>
-          <input type="number" name="" id="material-value" placeholder="Valor da Matéria Prima...." required>
-  
-          <label for="material-measure">
-            Tipo de Medida
-          </label>
-          <select name="material-measure" id="material-measure">
-            <option value="" selected disabled>Medida da Matéria-Prima</option>
-            <option value="M">Metro(m)</option>
-            <option value="CM">Centímetro(cm)</option>
-            <option value="MM">Milímetro(mm)</option>
-            <option value="UN">Unidade(unid)</option>
-          </select>
-  
-          <br>
-          <button type="submit">Cadastrar</button>
-        </form>
-      </dialog>
+      <a href="src/pages/calculation.html">
+        <button class="cta">get started</button>
+      </a>
     </section>
 
 

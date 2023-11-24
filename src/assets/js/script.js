@@ -3,7 +3,7 @@
 // Function to fetch data and render products
 async function fetchAndRenderProducts() {
     try {
-      const response = await fetch('data.json'); // Replace 'products.json' with your JSON file path
+      const response = await fetch('../../data.json'); // Replace 'products.json' with your JSON file path
       const data = await response.json();
   
       const producList = document.querySelector('#product-list');
