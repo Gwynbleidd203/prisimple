@@ -105,3 +105,7 @@ dialog {
     left: 50%;
     translate: -50% -50%;
 }
+
+hr {
+    margin-block: var(--spacing);
+}

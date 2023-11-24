@@ -33,17 +33,48 @@
 
     <main>
         <section>
-            <h2>Sell a Product</h2>
+            <h2>Calculate Your Price</h2>
 
-            <form action="">
+            <p style="margin-bottom: 0;">Add your materials and comissions</p>
 
-                <label for="">Product Name</label>
+            <hr style="margin-block: 2rem;">
 
-                <input type="text">
+            <form action="#">
+
+                <label for="">Material Prima 01</label>
+
+                <select name="" id="">
+                    <option value="offset" selected>Papel OFFSET 180g</option>
+                    <option value="offset" selected>Papel Sulfite 280g</option>
+                </select>
 
                 <label for=""></label>
 
-                
+                <button class="ghost">Adicionar um Material</button>
+
+                <hr>
+
+                <h3>Produto Final</h3>
+
+                <p style="margin-bottom: 0;">Dados sobre o produto final.</p>
+
+                <label for="">
+                    Custo do Produto
+                </label>
+
+                <input type="number" placeholder="Custo do Produto...">
+
+                <label for="">Margem de Lucro(%)</label>
+
+                <input type="number" placeholder="Margem de Lucro...">
+
+                <label for="">Comissão (%)</label>
+
+                <input type="number" placeholder="Valor de Comissão...">
+
+                <br>
+
+                <button class="cta">Calcular Valor</button>
             </form>
         </section>
     </main>
