@@ -107,5 +107,8 @@ dialog {
 }
 
 hr {
+    --spacing: var(--xl);
     margin-block: var(--spacing);
 }
+
+/* Adjust the hero Section */
